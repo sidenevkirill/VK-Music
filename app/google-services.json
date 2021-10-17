@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "221755067221",
+    "project_id": "flaco-music-8004e",
+    "storage_bucket": "flaco-music-8004e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:221755067221:android:1b7c3c4d8c25efed643ddc",
+        "android_client_info": {
+          "package_name": "com.flaco_music"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "221755067221-u6ca910epv89h1s6a3hvl7hdmfuggn09.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDf1NP4cEimKYmUayGyW9kjVhH0hB7VxSE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "221755067221-u6ca910epv89h1s6a3hvl7hdmfuggn09.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

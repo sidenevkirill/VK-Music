@@ -1,0 +1,149 @@
+<resources>
+    <string name="app_name" translatable="false">Flaco-Music</string>
+
+    <!-- Bottom nav menu -->
+    <string name="home">Home</string>
+    <string name="explore">Explore</string>
+    <string name="my_music">My music</string>
+
+    <!-- Home -->
+    <!-- Explore -->
+    <string name="search">Search</string>
+    <!-- My music -->
+
+    <!-- Friend music -->
+    <string name="number_of_tracks_pattern">%d tracks</string>
+
+    <!-- Login -->
+    <string name="login_title">Login with your VK account</string>
+    <string name="login">Login</string>
+    <string name="phone_or_email">Phone or email</string>
+    <string name="password">Password"</string>
+
+    <!-- Genres -->
+    <string name="genre_rock">Rock</string>
+    <string name="genre_pop">Pop</string>
+    <string name="genre_rap_and_hip_hop">Rap &amp; Hip-Hop</string>
+    <string name="genre_easy_listening">Easy listening</string>
+    <string name="genre_dance_and_house">Dance &amp; House</string>
+    <string name="genre_instrumental">Instrumental</string>
+    <string name="genre_metal">Metal</string>
+    <string name="genre_dubstep">Dubstep</string>
+    <string name="genre_jazz_and_blues">Jazz &amp; Blues</string>
+    <string name="genre_drum_and_bass">Drum &amp; Bass</string>
+    <string name="genre_trance">Trance</string>
+    <string name="genre_chanson">Chanson</string>
+    <string name="genre_ethnic">Ethnic</string>
+    <string name="genre_acoustic_and_vocal">Acoustic &amp; Vocal</string>
+    <string name="genre_reggae">Reggae</string>
+    <string name="genre_classical">Classical</string>
+    <string name="genre_indie_pop">Indie Pop</string>
+    <string name="genre_other">Other</string>
+    <string name="genre_speech">Speech</string>
+    <string name="genre_alternative">Alternative</string>
+    <string name="genre_electropop_and_disco">Electropop &amp; Disco</string>
+
+    <!-- App options -->
+    <string name="cover_resolution">Cover resolution</string>
+    <string name="write_us">Found an issue? Write us!</string>
+    <string name="tell_friends">Tell friends</string>
+    <string name="contact_developer">Contact developer</string>
+    <string name="auto_caching">Auto-caching</string>
+    <string name="dark_theme">Dark theme</string>
+    <string name="log_out">Log out</string>
+
+    <!-- Feedback -->
+    <string name="message">Message</string>
+    <string name="message_sent">Your message is successfully sent</string>
+    <string name="error_feedback_empty">Write something :)</string>
+    <string name="enter_code">Enter code</string>
+    <string name="subscribe_title">Don\'t want ads to be shown? Disable it forever for just:</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="skip">Skip</string>
+    <string name="genre_name">Genre name</string>
+    <string name="show_all">Show all</string>
+    <string name="song_name">Song name</string>
+    <string name="artist_name">Artist name</string>
+    <string name="track_name">Track name</string>
+
+    <!-- Next release dialog -->
+    <string name="next_release_coming_dialog_title">Next release is coming up!</string>
+    <string name="next_release_coming_dialog_button_text">OK</string>
+
+    <string name="next_release_coming_dialog_descriptions">List of new features:\n</string>
+
+    <string name="next_release_available_dialog_title">New version is available now!</string>
+    <string name="next_release_available_dialog_button_text">View in market</string>
+    <string name="nowhere_to_add_track">Oops&#8230; You have nowhere to add a track.</string>
+
+    <!-- Options dialog -->
+    <string name="dialog_option_add_to_my_music">Add to my music</string>
+    <string name="dialog_option_remove_from_my_music">Remove from my music</string>
+    <string name="dialog_option_follow">Follow</string>
+    <string name="dialog_option_unfollow">Unfollow</string>
+    <string name="dialog_option_add_to_playlist">Add to playlist</string>
+    <string name="dialog_option_remove_from_playlist">Remove from playlist</string>
+    <string name="dialog_option_save">Save</string>
+    <string name="dialog_option_remove_from_saved">Remove from saved</string>
+    <string name="dialog_option_lyrics">Lyrics</string>
+    <string name="dialog_option_view_album">View album</string>
+    <string name="dialog_option_view_artist">View Artist</string>
+    <string name="dialog_option_share">Share</string>
+    <string name="dialog_option_shuffle_play">Shuffle play</string>
+
+    <string name="downloads">Downloads</string>
+    <string name="no_saved_tracks">You have no saved tracks</string>
+    <string name="artist_not_found">Artist not found</string>
+    <string name="playback_error">Playback error</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="pause">Pause</string>
+    <string name="play">Play</string>
+    <string name="search_audio_item">Audio • %s</string>
+    <string name="search_album_item">Album • %s</string>
+    <string name="search_artist_item">Artist</string>
+    <string name="playlist_added">You followed a playlist</string>
+    <string name="playlist_not_added">Couldn\'t follow a playlist</string>
+    <string name="playlist_removed">You unfollowed a playlist</string>
+    <string name="playlist_not_removed">Couldn\'t unfollow a playlist</string>
+    <string name="playlist_is_empty">Playlist is empty</string>
+    <string name="track_added">Track successfully added</string>
+    <string name="track_not_added">Couldn\'t add a track</string>
+    <string name="track_removed">Track successfully removed</string>
+    <string name="track_not_removed">Couldn\'t remove a track</string>
+    <string name="track_added_to_playlist">Track successfully added to a playlist</string>
+    <string name="track_not_added_to_playlist">Couldn\'t add track to a playlist</string>
+    <string name="track_removed_from_playlist">Track successfully removed from playlist</string>
+    <string name="track_not_removed_from_playlist">Couldn\'t remove a track</string>
+    <string name="no_access_to_audio">You have no access to this audio</string>
+    <string name="logout_description">Are you sure you want to logout?</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="tell_friends_message">Hey, I listen music in Flaco.Music.\nCheck it out: %s</string>
+    <string name="internet_connection_error_message">Failed. Check your internet connection.</string>
+    <string name="google_pay_not_available">Unfortunately, Google Pay is not available on this device</string>
+    <string name="track_deleted_from_saved">Track successfully deleted from saved</string>
+    <string name="track_saved">Track successfully saved</string>
+    <string name="track_not_saved">Couldn\'t save a track</string>
+    <string name="feedback_sent">Feedback is successfully sent</string>
+    <string name="feedback_not_saved">Couldn\'t send a feedback</string>
+    <string name="error_auth_code_needed">Enter code from VK app</string>
+    <string name="error_auth_invalid_credentials">Username or password is incorrect</string>
+    <string name="content_restricted_title">Track is unavailable</string>
+    <string name="content_restricted_description">Unfortunately, this track is not available in your country</string>
+    <string name="additional_playlist_info">%s • %s</string>
+    <string name="additional_playlist_info_listens_less_k_many">%d прослушиваний</string>
+    <string name="additional_playlist_info_listens_less_k_one">%d прослушивание</string>
+    <string name="additional_playlist_info_listens_less_k_two_three_four">%d прослушивания</string>
+    <string name="additional_playlist_info_listens_k">%dK plays</string>
+    <string name="additional_playlist_info_listens_m">%dM plays</string>
+    <string name="additional_playlist_info_listens_b">%dB plays</string>
+    <string name="additional_playlist_info_hours_one">%d hours</string>
+    <string name="additional_playlist_info_hours_two_three_four">%d hours</string>
+    <string name="additional_playlist_info_hours_many">%d hours</string>
+    <string name="additional_playlist_info_minutes_one">%d minutes</string>
+    <string name="additional_playlist_info_minutes_two_three_four">%d minutes</string>
+    <string name="additional_playlist_info_minutes_many">%d minutes</string>
+    <string name="rate_dialog_title">Do you like our app?</string>
+
+</resources>

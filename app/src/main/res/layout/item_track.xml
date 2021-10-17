@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackground"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp">
+
+        <ImageView
+            android:id="@+id/coverImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/track_placeholder_small" />
+
+        <TextView
+            android:id="@+id/nameText"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="12dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:layout_marginEnd="16dp"
+            android:maxLines="1"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@id/artistNameText"
+            app:layout_constraintEnd_toStartOf="@id/isDownloadedIndicatorImage"
+            app:layout_constraintStart_toEndOf="@id/coverImage"
+            app:layout_constraintTop_toTopOf="@id/coverImage"
+            tools:text="Song Name" />
+
+        <TextView
+            android:id="@+id/artistNameText"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="12dp"
+            android:ellipsize="end"
+            android:layout_marginEnd="16dp"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/coverImage"
+            app:layout_constraintEnd_toStartOf="@id/isDownloadedIndicatorImage"
+            app:layout_constraintStart_toEndOf="@id/coverImage"
+            app:layout_constraintTop_toBottomOf="@id/nameText"
+            tools:text="Artist Name" />
+
+        <ImageView
+            android:id="@+id/isDownloadedIndicatorImage"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_baseline_cloud_download_24"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/durationText"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/durationText"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="4:30" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

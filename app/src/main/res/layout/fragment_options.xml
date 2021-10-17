@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Container"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/Base.Widget.AppCompat.TextView.PageTitle"
+        android:layout_width="0dp"
+        android:layout_margin="16dp"
+        android:text="Options"
+        android:textColor="@color/primary_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/sendFeedbackFrame"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="26dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/title">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:drawablePadding="16dp"
+            android:text="@string/write_us"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/ic_message_24"
+            app:drawableTint="@color/icon_tint" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tellFriendsFrame"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/sendFeedbackFrame">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:drawablePadding="16dp"
+            android:text="@string/tell_friends"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/ic_send_24"
+            app:drawableTint="@color/icon_tint" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contactDeveloperFrame"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/tellFriendsFrame">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:drawablePadding="16dp"
+            android:text="@string/contact_developer"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/ic_mail_24"
+            app:drawableTint="@color/icon_tint" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/coverResolutionFrame"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="26dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/contactDeveloperFrame">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:drawablePadding="16dp"
+            android:text="@string/cover_resolution"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/ic_baseline_image_24"
+            app:drawableTint="@color/icon_tint" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/darkModeFrame"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/coverResolutionFrame">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:drawablePadding="16dp"
+            android:text="@string/dark_theme"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/ic_baseline_dark_mode_24"
+            app:drawableTint="@color/icon_tint" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/darkModeSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/enableAutoCachingFrame"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/darkModeFrame">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:drawablePadding="16dp"
+            android:text="@string/auto_caching"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/ic_baseline_save_24_black"
+            app:drawableTint="@color/icon_tint" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/enableAutoCachingSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="16dp" />
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="FULL_BANNER"
+        ads:adUnitId="ca-app-pub-2056309928986745/5483784757"
+        app:layout_constraintTop_toBottomOf="@id/enableAutoCachingFrame" />
+
+    <LinearLayout
+        android:id="@+id/logoutFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:foreground="@drawable/rounded_ripple"
+        android:gravity="end"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="16dp"
+            android:drawablePadding="16dp"
+            android:text="@string/log_out"
+            android:textColor="@color/red"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/ic_baseline_logout_24"
+            app:drawableTint="@color/red" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

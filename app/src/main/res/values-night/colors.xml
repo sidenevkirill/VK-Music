@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">#E26767</color>
+    <color name="primary">#5674C0</color>
+    <color name="primaryDark">#5674C0</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_dark_1">#E4E4E4</color>
+    <color name="white_dark_2">#CCCCCC</color>
+    <color name="grey_1">#8A8A8A</color>
+    <color name="grey_2">#3C3C3C</color>
+
+    <color name="primary_text">@color/white</color>
+    <color name="toolbar_bg">@android:color/transparent</color>
+    <color name="icon_tint">@color/white</color>
+    <color name="player_bottom_control_bg">#2D2D2D</color>
+    <color name="divider">@color/grey_2</color>
+    <color name="background">#121212</color>
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/playerBottomControlView"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:elevation="8dp"
+    android:outlineProvider="bounds"
+    android:visibility="invisible"
+    app:layout_constraintTop_toTopOf="@id/bottomNavigationView">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/player_bottom_control_bg" />
+
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:id="@+id/trackProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:progress="50"
+        android:focusableInTouchMode="false"
+        android:max="1000"
+        android:paddingStart="0dp"
+        android:paddingEnd="0dp"
+        android:progressBackgroundTint="@color/primaryDark"
+        android:progressTint="@color/primary"
+        android:thumb="@null"
+        android:thumbOffset="0dp"
+        android:thumbTint="@null"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/optionsImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:foreground="@drawable/rounded_ripple"
+        android:padding="12dp"
+        android:src="@drawable/ic_baseline_more_vert_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/trackProgressBar"
+        app:tint="@color/icon_tint" />
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/track_name"
+        android:textColor="@color/primary_text"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/artistNameText"
+        app:layout_constraintEnd_toStartOf="@id/playImage"
+        app:layout_constraintStart_toEndOf="@id/optionsImage"
+        app:layout_constraintTop_toBottomOf="@+id/trackProgressBar" />
+
+    <TextView
+        android:id="@+id/artistNameText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="4dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/artist_name"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/playImage"
+        app:layout_constraintStart_toEndOf="@id/optionsImage"
+        app:layout_constraintTop_toBottomOf="@id/nameText" />
+
+    <ImageView
+        android:id="@+id/playImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:foreground="@drawable/rounded_ripple"
+        android:padding="12dp"
+        android:src="@drawable/exo_controls_play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/trackProgressBar"
+        app:tint="@color/icon_tint" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

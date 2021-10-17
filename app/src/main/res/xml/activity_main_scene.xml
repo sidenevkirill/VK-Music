@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        app:autoTransition="none"
+        app:constraintSetEnd="@id/playerViewHidden"
+        app:constraintSetStart="@+id/playerBottomControlViewHidden"
+        app:duration="500"
+        app:motionInterpolator="linear" />
+
+    <Transition
+        app:constraintSetEnd="@id/playerViewVisible"
+        app:constraintSetStart="@+id/playerViewHidden">
+
+        <OnSwipe app:touchRegionId="@id/playerBottomControlView" />
+
+    </Transition>
+
+    <Transition
+        app:constraintSetEnd="@id/playerViewVisible"
+        app:constraintSetStart="@+id/playerViewHidden">
+
+        <OnSwipe app:touchAnchorId="@id/playerBottomControlView" />
+
+    </Transition>
+
+    <ConstraintSet android:id="@+id/playerBottomControlViewHidden">
+        <Constraint
+            android:id="@id/playerView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:layout_constraintTop_toBottomOf="@id/playerBottomControlView" />
+
+        <Constraint
+            android:id="@id/playerBottomControlView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:visibility="invisible"
+            app:layout_constraintTop_toTopOf="@id/bottomNavigationView" />
+
+        <Constraint
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/playerViewHidden">
+        <Constraint
+            android:id="@id/playerView"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            app:layout_constraintTop_toBottomOf="@id/playerBottomControlView" />
+
+        <Constraint
+            android:id="@id/playerBottomControlView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView" />
+
+        <Constraint
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/playerViewVisible">
+        <Constraint
+            android:id="@id/playerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Constraint
+            android:id="@id/playerBottomControlView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:alpha="0"
+            android:visibility="invisible"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Constraint
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="parent" />
+    </ConstraintSet>
+
+</MotionScene>

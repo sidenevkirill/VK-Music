@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Bottom nav menu -->
+    <string name="home">Главная</string>
+    <string name="explore">Поиск</string>
+    <string name="my_music">Моя музыка</string>
+
+    <!-- Home -->
+    <!-- Explore -->
+    <string name="search">Поиск</string>
+    <!-- My music -->
+
+    <!-- Friend music -->
+    <string name="number_of_tracks_pattern">%d треков</string>
+
+    <!-- Login -->
+    <string name="login_title">Войдите через свой аккаунт ВК</string>
+    <string name="login">Вход</string>
+    <string name="phone_or_email">Телефон или эл. почта</string>
+    <string name="password">Пароль</string>
+
+    <!-- Genres -->
+    <string name="genre_rock">Рок</string>
+    <string name="genre_pop">Поп</string>
+    <string name="genre_rap_and_hip_hop">Рэп и Хип-Хоп</string>
+    <string name="genre_easy_listening">Легко слушать</string>
+    <string name="genre_dance_and_house">Танцевальное и Хаус</string>
+    <string name="genre_instrumental">Инструментал</string>
+    <string name="genre_metal">Металл</string>
+    <string name="genre_dubstep">Дабстеп</string>
+    <string name="genre_jazz_and_blues">Джаз и Блюз</string>
+    <string name="genre_drum_and_bass">Бочка и Басс</string>
+    <string name="genre_trance">Транс</string>
+    <string name="genre_chanson">Шансон</string>
+    <string name="genre_ethnic">Этническая</string>
+    <string name="genre_acoustic_and_vocal">Акустика и Вокал</string>
+    <string name="genre_reggae">Рэгги</string>
+    <string name="genre_classical">Классика</string>
+    <string name="genre_indie_pop">Инди Поп</string>
+    <string name="genre_other">Другое</string>
+    <string name="genre_speech">Разговорное</string>
+    <string name="genre_alternative">Альтернатива</string>
+    <string name="genre_electropop_and_disco">Электропоп и диско</string>
+
+    <!-- App options -->
+    <string name="write_us">Нашли ошибку? Напишите нам!</string>
+    <string name="tell_friends">Рассказать друзьям</string>
+    <string name="contact_developer">Связаться с разработчиком</string>
+    <string name="auto_caching">Автосохранение</string>
+
+    <!-- Feedback -->
+    <string name="message">Сообщение</string>
+    <string name="message_sent">Ваше сообщение успешно отправлено</string>
+    <string name="error_feedback_empty">Напишите что-нибудь :)</string>
+    <string name="enter_code">Введите код</string>
+    <string name="subscribe_title">Не хотите смотреть рекламу?\nОтключите её навсегда всего за:</string>
+    <string name="subscribe">Подписаться</string>
+    <string name="skip">Пропустить</string>
+    <string name="genre_name">Имя жанра</string>
+    <string name="show_all">Показать всё</string>
+    <string name="song_name">Название трека</string>
+    <string name="artist_name">Имя артиста</string>
+    <string name="track_name">Название трека</string>
+
+    <!-- Next release dialog -->
+    <string name="next_release_coming_dialog_title">Новый релиз уже на подходе!</string>
+    <string name="next_release_coming_dialog_button_text">ОК</string>
+
+    <string name="next_release_coming_dialog_descriptions">Список изменений:\n </string>
+
+    <string name="next_release_available_dialog_title">Новая версия уже доступна!</string>
+    <string name="next_release_available_dialog_button_text">Показать в маркете</string>
+    <string name="nowhere_to_add_track">Упс&#8230; Вам некуда добавить трек.</string>
+    <string name="dialog_option_add_to_my_music">Добавить в мою музыку</string>
+    <string name="dialog_option_remove_from_my_music">Удалить из моей музыки</string>
+    <string name="dialog_option_follow">Подписаться</string>
+    <string name="dialog_option_unfollow">Отписаться</string>
+    <string name="dialog_option_add_to_playlist">Добавить в плейлист</string>
+    <string name="dialog_option_remove_from_playlist">Удалить из плейлиста</string>
+    <string name="dialog_option_save">Сохранить</string>
+    <string name="dialog_option_remove_from_saved">Удалить из сохранённых</string>
+    <string name="dialog_option_lyrics">Текст</string>
+    <string name="dialog_option_view_album">Показать альбом</string>
+    <string name="dialog_option_view_artist">Показать артиста</string>
+    <string name="dialog_option_share">Поделиться</string>
+    <string name="dialog_option_shuffle_play">Случайное проигрывание</string>
+    <string name="downloads">Загрузки</string>
+    <string name="no_saved_tracks">У вас нет сохранённых треков</string>
+    <string name="artist_not_found">Артист не найден</string>
+    <string name="playback_error">Ошибка воспроизведения</string>
+    <string name="previous">Предыдущий</string>
+    <string name="next">Следующий</string>
+    <string name="pause">Пауза</string>
+    <string name="play">Воспроизвести</string>
+    <string name="search_audio_item">Трек</string>
+    <string name="search_album_item">Альбом</string>
+    <string name="search_artist_item">Артист</string>
+    <string name="playlist_added">Вы подписались на плейлист</string>
+    <string name="playlist_removed">Вы отписались от плейлиста</string>
+    <string name="playlist_not_added">Невозможно подписаться на плейлист</string>
+    <string name="playlist_not_removed">Невозможно отписаться от плейлиста</string>
+    <string name="playlist_is_empty">Плейлист пуст</string>
+    <string name="track_added">Трек успешно добавлен</string>
+    <string name="track_not_added">Невозможно добавить трек</string>
+    <string name="track_removed">Трек успешно удалён</string>
+    <string name="track_not_removed">Невозможно удалить трек</string>
+    <string name="track_added_to_playlist">Трек успешно добавлен в плейлист</string>
+    <string name="track_not_added_to_playlist">Невозможно добавить трек в плейлист</string>
+    <string name="track_removed_from_playlist">Трек успешно удалён из плейлиста</string>
+    <string name="track_not_removed_from_playlist">Невозможно удалить трек</string>
+    <string name="no_access_to_audio">У вас нет доступа к этому треку</string>
+    <string name="logout_description">Вы уверены, что хотите выйти?</string>
+    <string name="yes">Да</string>
+    <string name="cancel">Закрыть</string>
+    <string name="internet_connection_error_message">Ошибка. Проверьте подключение к интернету.</string>
+    <string name="google_pay_not_available">"К сожалению, Google Play не доступен на вашем устройстве"</string>
+    <string name="track_deleted_from_saved">Трек успешно удалён из сохранённых</string>
+    <string name="track_saved">Трек успешно сохранён</string>
+    <string name="track_not_saved">Невозможно сохранить трек</string>
+    <string name="feedback_sent">Фидбек успешно отправлен</string>
+    <string name="feedback_not_saved">Невозможно отправить фидбек</string>
+    <string name="tell_friends_message">Хей, я слушаю музыку в Flaco.Music! Зацени: %s</string>
+    <string name="log_out">Выйти</string>
+    <string name="error_auth_code_needed">Введите код из приложения ВК</string>
+    <string name="error_auth_invalid_credentials">Некорректный логин или пароль</string>
+    <string name="cover_resolution">Разрешение обложки трека</string>
+    <string name="dark_theme">Тёмная тема</string>
+    <string name="content_restricted_description">К сожалению, трек недоступен в вашей стране</string>
+    <string name="additional_playlist_info">%s • %s</string>
+    <string name="additional_playlist_info_listens_less_k_many">%d прослушиваний</string>
+    <string name="additional_playlist_info_listens_less_k_one">%d прослушивание</string>
+    <string name="additional_playlist_info_listens_less_k_two_three_four">%d прослушивания</string>
+    <string name="additional_playlist_info_listens_k">%dK прослушиваний</string>
+    <string name="additional_playlist_info_listens_m">%dM прослушиваний</string>
+    <string name="additional_playlist_info_listens_b">%dB прослушиваний</string>
+    <string name="additional_playlist_info_hours_one">%d час</string>
+    <string name="additional_playlist_info_hours_two_three_four">%d часа</string>
+    <string name="additional_playlist_info_hours_many">%d часов</string>
+    <string name="additional_playlist_info_minutes_one">%d минута</string>
+    <string name="additional_playlist_info_minutes_two_three_four">%d минуты</string>
+    <string name="additional_playlist_info_minutes_many">%d минут</string>
+    <string name="rate_dialog_title">Вам нравится наше приложение?</string>
+    <string name="content_restricted_title">Трек недоступен</string>
+</resources>

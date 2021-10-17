@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.flaco_music.ui.screens.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+
+        <argument
+            android:name="trackId"
+            android:defaultValue=""
+            app:argType="string" />
+
+        <deepLink app:uri="flaco.music/track/{trackId}" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_playlistFragment"
+            app:destination="@id/playlistFragment"
+            app:enterAnim="@animator/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"
+            app:popEnterAnim="@animator/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_homeFragment_to_catalogTracksFragment"
+            app:destination="@id/catalogTracksFragment"
+            app:enterAnim="@animator/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"
+            app:popEnterAnim="@animator/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_homeFragment_to_catalogPlaylistsFragment"
+            app:destination="@id/catalogPlaylistsFragment"
+            app:enterAnim="@animator/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"
+            app:popEnterAnim="@animator/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_homeFragment_to_catalogItemsFragment"
+            app:destination="@id/catalogItemsFragment"
+            app:enterAnim="@animator/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"
+            app:popEnterAnim="@animator/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_homeFragment_to_friendMusicFragment"
+            app:destination="@id/friendMusicFragment"
+            app:enterAnim="@animator/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"
+            app:popEnterAnim="@animator/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_homeFragment_to_downloadsFragment"
+            app:destination="@id/downloadsFragment"
+            app:enterAnim="@animator/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"
+            app:popEnterAnim="@animator/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/exploreFragment"
+        android:name="com.flaco_music.ui.screens.explore.ExploreFragment"
+        android:label="ExploreFragment"
+        tools:layout="@layout/fragment_explore">
+        <action
+            android:id="@+id/action_searchFragment_to_genreFragment"
+            app:destination="@id/genreFragment"
+            app:enterAnim="@animator/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"
+            app:popEnterAnim="@animator/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_exploreFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myMusicFragment"
+        android:name="com.flaco_music.ui.screens.my_music.MyMusicFragment"
+        android:label="MyMusicFragment"
+        tools:layout="@layout/fragment_my_music">
+        <action
+            android:id="@+id/action_myMusicFragment_to_playlistFragment"
+            app:destination="@id/playlistFragment"
+            app:enterAnim="@animator/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"
+            app:popEnterAnim="@animator/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_myMusicFragment_to_myMusicFragment"
+            app:destination="@id/myMusicFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"
+            app:popUpTo="@+id/myMusicFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_myMusicFragment_to_downloadsFragment"
+            app:destination="@id/downloadsFragment"
+            app:enterAnim="@animator/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"
+            app:popEnterAnim="@animator/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/playlistFragment"
+        android:name="com.flaco_music.ui.screens.playlist.PlaylistFragment"
+        android:label="PlaylistFragment"
+        tools:layout="@layout/fragment_playlist">
+
+        <deepLink app:uri="flaco.music/playlist/{ownerId}_{playlistId}" />
+
+        <argument
+            android:name="playlistId"
+            app:argType="integer" />
+        <argument
+            android:name="ownerId"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/genreFragment"
+        android:name="com.flaco_music.ui.screens.genre.GenreFragment"
+        android:label="GenreFragment"
+        tools:layout="@layout/fragment_genre">
+        <argument
+            android:name="genreId"
+            app:argType="integer" />
+        <argument
+            android:name="genreName"
+            app:argType="string" />
+        <argument
+            android:name="color"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.flaco_music.ui.screens.search.SearchFragment"
+        android:label="SearchFragment"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_searchFragment_to_playlistFragment"
+            app:destination="@id/playlistFragment"
+            app:enterAnim="@animator/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"
+            app:popEnterAnim="@animator/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_searchFragment_to_artistFragment"
+            app:destination="@id/artistFragment"
+            app:enterAnim="@animator/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"
+            app:popEnterAnim="@animator/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/catalogTracksFragment"
+        android:name="com.flaco_music.ui.screens.catalog.tracks.CatalogTracksFragment"
+        android:label="CatalogTracksFragment"
+        tools:layout="@layout/fragment_catalog_tracks">
+        <argument
+            android:name="sectionId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/catalogPlaylistsFragment"
+        android:name="com.flaco_music.ui.screens.catalog.playlists.CatalogPlaylistsFragment"
+        android:label="CatalogPlaylistsFragment"
+        tools:layout="@layout/fragment_catalog_playlists">
+        <argument
+            android:name="sectionId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_catalogPlaylistsFragment_to_playlistFragment"
+            app:destination="@id/playlistFragment"
+            app:enterAnim="@animator/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"
+            app:popEnterAnim="@animator/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/catalogItemsFragment"
+        android:name="com.flaco_music.ui.screens.catalog.items.CatalogItemsFragment"
+        android:label="CatalogItemsFragment"
+        tools:layout="@layout/fragment_catalog_items">
+        <argument
+            android:name="sectionId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_catalogItemsFragment_to_friendMusicFragment"
+            app:destination="@id/friendMusicFragment"
+            app:enterAnim="@animator/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"
+            app:popEnterAnim="@animator/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/friendMusicFragment"
+        android:name="com.flaco_music.ui.screens.friend_music.FriendMusicFragment"
+        android:label="FriendMusicFragment"
+        tools:layout="@layout/fragment_friend_music">
+        <argument
+            android:name="ownerId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_friendMusicFragment_to_playlistFragment"
+            app:destination="@id/playlistFragment"
+            app:enterAnim="@animator/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"
+            app:popEnterAnim="@animator/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/artistFragment"
+        android:name="com.flaco_music.ui.screens.artist.ArtistFragment"
+        android:label="ArtistFragment"
+        tools:layout="@layout/fragment_artist">
+        <argument
+            android:name="artistId"
+            app:argType="string" />
+
+        <deepLink app:uri="flaco.music/artist/{artistId}" />
+
+        <action
+            android:id="@+id/action_artistFragment_to_playlistFragment"
+            app:destination="@id/playlistFragment"
+            app:enterAnim="@animator/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"
+            app:popEnterAnim="@animator/nav_default_pop_enter_anim"
+            app:popExitAnim="@animator/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/downloadsFragment"
+        android:name="com.flaco_music.ui.screens.downloads.DownloadsFragment"
+        android:label="DownloadsFragment"
+        tools:layout="@layout/fragment_downloads" />
+</navigation>

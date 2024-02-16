@@ -30,4 +30,4 @@
 [<img src="https://i.ibb.co/jMwfXFd/rustore-light.png" alt="Скачать из RuStore" height="60">](https://apps.rustore.ru/app/com.flaco_music.news)
 
 ## Приобрести
-Последняя версия проекта [**тут**](https://boosty.to/sidenyov.kirill/posts/eac2112a-d42a-4895-909f-132c2ca0c7b4)
+Последняя версия и полные права на проект [**тут**](https://boosty.to/sidenyov.kirill/posts/eac2112a-d42a-4895-909f-132c2ca0c7b4)

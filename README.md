@@ -2,7 +2,6 @@
     <img src="https://github.com/sidenevkirill/Flaco-VKMusic/blob/master/logo.png?raw=true" width="128" height="128" style="display: block; margin: 0 auto"/>
     <h1>FLACO</h1>
     <p>Пполноценный музыкальный каталог, интергрированный с ВК. Главные преимущества</p>
-     [![Flaco-Music](https://img.shields.io/badge/build-passed-brightgreen)](https://github.com/sidenevkirill/Flaco-Music)
 
 </div>
 

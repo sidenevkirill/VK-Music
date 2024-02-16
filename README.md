@@ -26,4 +26,4 @@
 [<img src="https://i.ibb.co/jMwfXFd/rustore-light.png" alt="Скачать из RuStore" height="60">](https://apps.rustore.ru/app/com.flaco_music.news)
 
 ## Приобрести
-- [**Купить**](https://github.com/vfsfitvnm): Приобрести последниию верисию проекта.
+(https://boosty.to/sidenyov.kirill/posts/eac2112a-d42a-4895-909f-132c2ca0c7b4): Приобрести последниию верисию проекта можно [**тут**]
